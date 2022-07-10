@@ -42,7 +42,7 @@ ul a, .dropdown .content a {
 .navbar li {
     flex-shrink: 0;
 }
-.active, .dropdown:hover button, .dropdown .content a:hover {
+.active, .navbar a:hover, .dropdown:hover button, .dropdown .content a:hover {
     background-color: var(--accent-color);
     color: var(--light-gray);
 }
