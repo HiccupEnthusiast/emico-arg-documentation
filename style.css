@@ -5,6 +5,18 @@
     --accent-color: #f7d3b1;
 }
 
+.wip {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+.wip img {
+    width: 280px;
+    height: auto;
+}
+
 
 body {
     margin: 0;
