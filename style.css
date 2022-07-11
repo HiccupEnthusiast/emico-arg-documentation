@@ -34,7 +34,6 @@ body {
     background-color: var(--light-gray);
     margin: 0;
     border-bottom: 5px var(--accent-color) solid;
-    position: fixed;
     top: 0;
     width: 100%;
 }
@@ -81,7 +80,6 @@ button.w-icon {
 /* Navigation bar end */
 
 .main {
-    margin-top: 57px;
     display: flex;
     min-height: 100vh;
 }
@@ -103,15 +101,18 @@ button.w-icon {
 .sidebar ol {
     margin: 0;
     counter-reset: item;
+    padding-left: 15px;
 }
 .sidebar ol>li {
     display: block;
 }
 .sidebar ol>li:before {
-    content: counters(item, ".") ". "; counter-increment: item;
+    content: counters(item, ".") " "; 
+    counter-increment: item;
 }
-.sidebar a {
-    color: white;
+.sidebar a, .sidebar ol>li:before {
+    color: gray;
+    font-size: smaller;
 }
 /* Sidebar end */
 
