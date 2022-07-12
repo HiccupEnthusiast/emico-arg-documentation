@@ -24,6 +24,10 @@ body {
     background-color: var(--gray);
     color: white;
 }
+h1, h2, h3, h4 {
+    border-bottom: 1px var(--accent-color) solid;
+    padding-bottom: 10px;
+}
 
 
 
@@ -91,6 +95,22 @@ button.w-icon {
 .content a {
     color: var(--accent-color);
 }
+.imgwfooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7px;
+    border: var(--light-gray) 1px solid;
+    border-radius: 2%;
+}
+.imgwfooter p {
+    font-style: italic;
+    text-align: center;
+    margin: 0;
+    padding: 5px 15px;
+    color: gray;
+    font-size: small;
+}
 
 /* Sidebar start */
 .sidebar {
@@ -116,6 +136,35 @@ button.w-icon {
 }
 /* Sidebar end */
 
+.block {
+    display: flex;
+    margin: 50px 0px;
+    gap: 20px;
+}
+.column-block {
+    display: flex;
+    flex-direction: column;
+}
+.disclaimer {
+    background-color: #0f0e10;
+    margin: 0px auto;
+    width: 80%;
+    border: var(--light-gray) 2px solid;
+    border-radius: 2%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+    padding-top: 10px;
+    height: 100px;
+}
+.disclaimer h3 {
+    width: 100%;
+    text-align: center;
+}
+
+
 
 @media (min-width: 100px) and (max-width: 599px) {
     .navbar ul {
@@ -126,6 +175,12 @@ button.w-icon {
     }
     .sidebar {
         width: 100vw;
+    }
+    .block {
+        flex-direction: column;
+    }
+    .imgwfooter img {
+        width: 80vw;
     }
 }
 
